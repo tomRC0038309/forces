@@ -41,5 +41,34 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        double sin(double x)
+        {
+            return (Math.Sin(x * Math))
+        }
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            double force = double.Parse(textBox1.Text);
+            double angle = double.Parse(textBox2.Text);
+
+
+            double Fx = force * cos(angle);
+            double Fy = force * sin(angle);
+
+            label1.Text = "Fx = " + Fx;
+            Label2.Text = "Fy = " + Fy;
+            
+
+        }
     }
 }
