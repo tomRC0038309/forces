@@ -54,8 +54,10 @@ namespace WindowsFormsApp1
 
         double sin(double x)
         {
-            return (Math.Sin(x * Math))
+            return (Math.Sin(x * Math.PI / 180.00));
         }
+
+        double asin(double x)
         private void Button1_Click(object sender, EventArgs e)
         {
             double force = double.Parse(textBox1.Text);
